@@ -1,0 +1,25 @@
+Inicio -> git init 
+Mustra el estatu -> git status
+Añade -> git add <file>
+Añade todo los archivos -> git add .
+Elimina -> git rm <file>
+Elimina tambien de memoria -> git rm --cached <file>
+Crear lo archivos para enpaquetar -> git commit -m "Mensaje a enviar"
+Mer informacion de git -> git config --list
+Historil de creasion de archivos -> git log <file>
+Mustrar el historial de cambios de un archivo -> git show <file>
+Mustra que se cambio entre versiones -> git diff <codigo commit> <codigo commit>
+resetiar una version anterior suabe -> git reset <commit> --soft
+resetiar una version anterior fuerte -> git reset <commit> --hard
+Historil de git -> git log --stat
+Historia de un archivo modificado editable -> git checkout <comit> <file>
+Historia devolver archivo si no a echado un comi -> git checkout master <file>
+crear el comid y añadiendo los al mismo tiempo -> git comit -am "descricion del commit"
+crear ramas -> git branch <nombre de la rama>
+para cambiar de rama -> git checkout <nombre de la rama>
+para saver en que rama estoy -> git branch
+para uniar dos ramas utilizo -> git merge <nombre de la rama>
+agrregar un origen remoto -> git remote add origin <url> https://github.com/solcra/pythonEstudio.git
+subir a origen remoto -> git push origin master
+Realizar merge en remoto -> git pull origen <nombre de la rama>
+Realizar conbinacion de historial -> git pull origin master --allow-unrelated-histories
