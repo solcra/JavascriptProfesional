@@ -26,4 +26,9 @@ subir a origen remoto -> git push origin master
 Realizar merge en remoto -> git pull origen <nombre de la rama>
 Realizar conbinacion de historial -> git pull origin master --allow-unrelated-histories
 Crear llave windows -> ssh-keygen -t rsa -b 4096 -C "youremail@example.com"
-Mostrar log con decoradores -> git log --all --decorate --oneline
+Mostrar historia -> git log --all --decorate --oneline
+add tag a proyectos -> git tag -a v0.1 -m "Mensaje"
+mostrar los tag -> git show-ref --tags
+Subir los tag a servidor -> git push origin --tags
+borrar tag -> git tag -d <nombre tag>
+borrarlo de servidor -> git push origin :refs/tags/<nombre del tag>
