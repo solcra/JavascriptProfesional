@@ -32,6 +32,6 @@ mostrar los tag -> git show-ref --tags
 Subir los tag a servidor -> git push origin --tags
 borrar tag -> git tag -d <nombre tag>
 borrarlo de servidor -> git push origin :refs/tags/<nombre del tag>
-monstrar el historil de las remas -> git show-branch
+mostrar el historil de las remas -> git show-branch
 mostrar mas historial de las ramas -> git show-branch --all
 clonar el proyecto desde git -> git clone url
