@@ -21,6 +21,7 @@ para saver en que rama estoy -> git branch
 para uniar dos ramas utilizo -> git merge <nombre de la rama>
 agrregar un origen remoto -> git remote add origin <url> https://github.com/solcra/pythonEstudio.git
 para verificar donde se esta guardando -> git remote -v
+Add mas url de proyectos -> git remote add <nombre normal mente "upstream"> <url>
 para actualizar la url deode se guarda -> git remote set-url <url> git@github.com:solcra/pythonEstudio.git
 subir a origen remoto -> git push origin master
 Realizar merge en remoto -> git pull origen <nombre de la rama>
@@ -35,3 +36,4 @@ borrarlo de servidor -> git push origin :refs/tags/<nombre del tag>
 mostrar el historil de las remas -> git show-branch
 mostrar mas historial de las ramas -> git show-branch --all
 clonar el proyecto desde git -> git clone url
+Crear un relist para que no se vena cambios en la rama de una rama -> git rebese <primero en la rama que desaparese luego en la rama que queda>
