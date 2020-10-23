@@ -37,3 +37,8 @@ mostrar el historil de las remas -> git show-branch
 mostrar mas historial de las ramas -> git show-branch --all
 clonar el proyecto desde git -> git clone url
 Crear un relist para que no se vena cambios en la rama de una rama -> git rebese <primero en la rama que desaparese luego en la rama que queda>
+Guardan en memoria -> git stash
+Ver lo que se guardo en memoria -> git stash list
+Recuperar el estado de memorio -> git stash pop
+Crear una branch de loq ue esta en memoria -> git stash branch <nombre de la rama>
+Eliminar de la memria -> git stash drop
