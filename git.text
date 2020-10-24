@@ -45,3 +45,20 @@ Eliminar de la memria -> git stash drop
 quitar elementos que no quieres que esten en tu repositorio preimero tienes que listarlos -> git clean --dry-run
 para eliminar los archivos -> git clian -f
 pasar un comit viejo a otro -> git cherry-pick <rama y id>
+remendar el comit anterior -> git commit --amend
+Ver todo el historial -> git reflog
+para poner el puntero en el head que deseamos -> git reset <el hact "HEAD@{1}">
+para trare la informacion es con el -> git reset --HAED <id comit>
+buscar en git archivos -> git grep <palabra a buscar>
+buscar y poner la linea -> git grep -n <palabra>
+para contar -> git grep -c <palabra>
+para buscar en git BD -> git log -S "palabra"
+ver cada uno de los comit que se asubido -> git shortlog
+ver el numero de comis que aecho cada uno de las personas -> git shortlog -sn
+Ver el nuemro de comis incluso los borrados por persona -> git shortlog -sn --all
+ver el numero de commis incluso los borrados menos los merges -> git shortlog -sn -all --no-merges
+crear alias en git -> git config --global alias.<nombre del alias> "<comando>"
+ver quien realizo cada uno de los lineas -> git blame <nombre archivo>
+ver mas organizado la identacion -> git blame -c <nombre archivo>
+saver el un rango de lineas que modificaron -> git blame <nombre archivo> -L<linea>,<linea>
+saver como funciona un comando de git -> git <comando> --help
