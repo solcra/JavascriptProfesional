@@ -18,6 +18,8 @@ crear el comid y añadiendo los al mismo tiempo -> git comit -am "descricion del
 crear ramas -> git branch <nombre de la rama>
 para cambiar de rama -> git checkout <nombre de la rama>
 para saver en que rama estoy -> git branch
+para mirar la ramas que hay remotas -> git branch -r
+para mirar todas las ramos locales y remotas -> git branch -a
 para uniar dos ramas utilizo -> git merge <nombre de la rama>
 agrregar un origen remoto -> git remote add origin <url> https://github.com/solcra/pythonEstudio.git
 para verificar donde se esta guardando -> git remote -v
