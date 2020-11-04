@@ -58,9 +58,36 @@ let rect: Rectangulo = {
   // color: Color.Rojo,
 };
 
+// Funciones
+function add(a: number, b: number): number{
+  return a + b;
+}
+
+const suma = add(4, 6)
+console.log(suma)
+
+function createAdder(a: number): (numer) => number {
+  return function(b: number){
+    return b + a;
+  }
+}
+
+const addFour = createAdder(4);
+const forPlus6 = addFour(6);
+console.log("Pase 1")
+console.log(addFour);
+console.log("Pase 2")
+console.log(forPlus6);
+
 function area(r: Rectangulo): number {
   return r.alto * r.ancho;
 }
+
+function fullName(firstName: string, lastName: string =''): string {
+  return `${firstName} ${lastName}`;
+}
+console.log(fullName('Carlos', 'Granada'))
+console.log(fullName('Carlos'))
 
 const areaRect = area(rect);
 console.log(areaRect);
