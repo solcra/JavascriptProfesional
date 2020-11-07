@@ -40,23 +40,6 @@ comodin = {type: 'Wildcard'}
 let someObject: object = {type: 'Wildcard'}
 
 
-// Interfaces
-enum Color {
-  Rojo = 'Rojo',
-  Verde = 'Verde',
-}
-
-interface Rectangulo {
-  ancho: number;
-  alto: number;
-  color?: Color;
-}
-
-let rect: Rectangulo = {
-  ancho: 4,
-  alto: 6,
-  // color: Color.Rojo,
-};
 
 // Funciones
 function add(a: number, b: number): number{
@@ -79,15 +62,35 @@ console.log(addFour);
 console.log("Pase 2")
 console.log(forPlus6);
 
-function area(r: Rectangulo): number {
-  return r.alto * r.ancho;
-}
+
 
 function fullName(firstName: string, lastName: string =''): string {
   return `${firstName} ${lastName}`;
 }
 console.log(fullName('Carlos', 'Granada'))
 console.log(fullName('Carlos'))
+
+// interfaces
+
+enum Color {
+  Rojo = 'Rojo',
+  Verde = 'Verde',
+}
+interface Rectangulo {
+  ancho: number;
+  alto: number;
+  color?: Color;
+}
+
+let rect: Rectangulo = {
+  ancho: 4,
+  alto: 6,
+  color: Color.Rojo,
+};
+
+function area(r: Rectangulo): number {
+  return r.alto * r.ancho;
+}
 
 const areaRect = area(rect);
 console.log(areaRect);
@@ -97,3 +100,5 @@ rect.toString = function() {
 };
 
 console.log(rect.toString());
+
+
